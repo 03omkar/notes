@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Note</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white p-6 rounded-xl shadow-lg w-full max-w-md">
+    <h2 class="text-2xl font-bold mb-4 text-center">View Note</h2>
+
+    <input
+      id="password"
+      type="password"
+      placeholder="Enter password"
+      class="w-full p-3 border rounded-lg focus:outline-none focus:ring focus:border-green-400"
+    />
+
+    <button
+      onclick="viewNote()"
+      class="mt-4 w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700"
+    >
+      View
+    </button>
+
+    <p id="noteText" class="mt-4 p-3 bg-gray-100 rounded text-gray-800"></p>
+
+    <button
+      onclick="summarize()"
+      class="mt-4 w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700"
+    >
+      Summarize this note
+    </button>
+
+    <p id="summary" class="mt-4 text-sm text-gray-700"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
